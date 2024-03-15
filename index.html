@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IOS Calculator</title>
+    <meta name="description" content="A simple calculator app similar to the one on the iPhone built with vanilla Javascript"/>
+
+    <title>IOS Calculator by AR23</title>
 
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <section class="result">
-            <p>0</p>
-        </section>
-    </div>
-    <div class="buttons">
-        <button class="button-item item1 clear">AC</button>
-        <button class="button-item item2 negative" value="+/-">+/-</button>
-        <button class="button-item percent sign" value="%">%</button>
-        <button class="button-item item3 sign" value="/">/</button>
-        <button class="button-item numbers" value="7">7</button>
-        <button class="button-item numbers" value="8">8</button>
-        <button class="button-item numbers" value="9">9</button>
-        <button class="button-item item3 sign" value="x">x</button>
-        <button class="button-item numbers" value="4">4</button>
-        <button class="button-item numbers" value="5">5</button>
-        <button class="button-item numbers" value="6">6</button>
-        <button class="button-item item3 sign" value="-">-</button>
-        <button class="button-item numbers" value="1">1</button>
-        <button class="button-item numbers" value="2">2</button>
-        <button class="button-item numbers" value="3">3</button>
-        <button class="button-item item3 sign" value="+">+</button>
-        <button class="button-item itemZero numbers" value="0">0</button>
-        <button class="button-item comma">,</button>
-        <button class="button-item item3 equals">=</button>
-    </div>
+    <main>
+        <div class="calculator">
+          <button class="display" value="0">0</button>
+          <div class="buttons">
+            <div class="numbersAndModifiers">
+              <div class="modifiers">
+                <button class="modifier" id="clear">AC</button>
+                <button class="modifier" id="plusMinus">+/-</button>
+                <button class="modifier" id="percent">%</button>
+              </div>
+              <div class="numbers">
+                <button class="number" value="7">7</button>
+                <button class="number" value="8">8</button>
+                <button class="number" value="9">9</button>
+                <button class="number" value="4">4</button>
+                <button class="number" value="5">5</button>
+                <button class="number" value="6">6</button>
+                <button class="number" value="1">1</button>
+                <button class="number" value="2">2</button>
+                <button class="number" value="3">3</button>
+                <button class="number zero" value="0">0</button>
+                <button class="number" id="point" value=".">.</button>
+              </div>
+            </div>
+            <div class="operators">
+              <button class="operator" id="divide" value="divide">&#247;</button>
+              <button class="operator" id="multiply" value="multiply">&#10005;</button>
+              <button class="operator" id="subtract" value="subtract">&#8722;</button>
+              <button class="operator" id="add" value="add">&#43;</button>
+              <button class="operator" id="equals" value="equals">&#61;</button>
+            </div>
+          </div>
+        </div>
+      </main>
 </body>
 </html>
